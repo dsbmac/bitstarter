@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express.createServer(express.logger());
-var msg = buf.toString(fs.readSync('index.html'));
+var msg = buf.toString(fs.readSync('./index.html'));
 app.get('/', function(request, response) {
   response.send(msg);
 });
